@@ -8,7 +8,7 @@ Embedded in the package are two folders: SIMuseum FP and UnityBuild. Be sure not
 
 The UnityBuild folder includes all Unity-based information including the scene (rendered geometry and VR environment). It also includes the iOS build that simulates the scene with the embedded Unity framework. To open the scene, open the folder from Unity and it should be available to be initialized from the UnityBuild folder.
 
-SIMuseum FP includes the Swift project file and all associated files, including test files, individual view files, and file assets. It's best not to interact with these from the folder, so open up the WORKSPACE file from the primary folder view to begin.
+SIMuseum FP includes the Swift project file and all associated files, including test files, individual view files, and file assets.
 
 // Instructions //
 
