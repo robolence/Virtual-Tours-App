@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F853C36293A7594005F0390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853C35293A7594005F0390 /* AppDelegate.swift */; };
+		7F853C38293A7594005F0390 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853C37293A7594005F0390 /* SceneDelegate.swift */; };
+		7F853C3A293A7594005F0390 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853C39293A7594005F0390 /* ViewController.swift */; };
+		7F853C3D293A7594005F0390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F853C3B293A7594005F0390 /* Main.storyboard */; };
+		7F853C3F293A7595005F0390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F853C3E293A7595005F0390 /* Assets.xcassets */; };
+		7F853C42293A7595005F0390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F853C40293A7595005F0390 /* LaunchScreen.storyboard */; };
+		7F853C4D293A7595005F0390 /* SIMuseum_FPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853C4C293A7595005F0390 /* SIMuseum_FPTests.swift */; };
+		7F853C57293A7595005F0390 /* SIMuseum_FPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853C56293A7595005F0390 /* SIMuseum_FPUITests.swift */; };
+		7F853C59293A7595005F0390 /* SIMuseum_FPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853C58293A7595005F0390 /* SIMuseum_FPUITestsLaunchTests.swift */; };
+		7F853C83293A7732005F0390 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F853C7C293A76AF005F0390 /* UnityFramework.framework */; };
+		7F853C84293A7732005F0390 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F853C7C293A76AF005F0390 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7F853C89293A78AE005F0390 /* Unity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853C88293A78AE005F0390 /* Unity.swift */; };
+		7F853C8D293A7989005F0390 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853C8A293A7989005F0390 /* HeaderView.swift */; };
+		7F853C8E293A7989005F0390 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853C8B293A7989005F0390 /* ContentView.swift */; };
+		7F853C94293A94D6005F0390 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853C93293A94D6005F0390 /* DataService.swift */; };
+		7F853CA2293A9A37005F0390 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 7F853CA1293A9A37005F0390 /* SwiftSoup */; };
+		7F853CA7293B225E005F0390 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853CA5293B2208005F0390 /* ArticleListView.swift */; };
+		7F853CA8293B225E005F0390 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853CA6293B2208005F0390 /* Article.swift */; };
+		7F853CA9293B225E005F0390 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853CA4293B2208005F0390 /* ArticleCell.swift */; };
+		7F853CEC293C71C3005F0390 /* Slideshow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853CEB293C71C3005F0390 /* Slideshow.swift */; };
+		7F853CEE293C76F0005F0390 /* SlideshowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853CED293C76F0005F0390 /* SlideshowData.swift */; };
+		7F853CF0293C7777005F0390 /* SlideshowDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853CEF293C7777005F0390 /* SlideshowDataService.swift */; };
+		7F853CF4293D9803005F0390 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853CF3293D9803005F0390 /* ShopView.swift */; };
+		7F853CF6293D9DBE005F0390 /* DonateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853CF5293D9DBE005F0390 /* DonateView.swift */; };
+		7F853CF8293DA5AD005F0390 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853CF7293DA5AD005F0390 /* ViewRouter.swift */; };
+		7F853CFA293E870E005F0390 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853CF9293E870E005F0390 /* TicketView.swift */; };
+		7F853D41293ECE6E005F0390 /* TabFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F853D40293ECE6E005F0390 /* TabFooterView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F853C49293A7595005F0390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F853C2A293A7594005F0390 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F853C31293A7594005F0390;
+			remoteInfo = "SIMuseum FP";
+		};
+		7F853C53293A7595005F0390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F853C2A293A7594005F0390 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F853C31293A7594005F0390;
+			remoteInfo = "SIMuseum FP";
+		};
+		7F853C77293A76AF005F0390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F853C71293A76AF005F0390 /* Unity-iPhone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = "Unity-iPhone";
+		};
+		7F853C79293A76AF005F0390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F853C71293A76AF005F0390 /* Unity-iPhone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5623C57317FDCB0800090B9E;
+			remoteInfo = "Unity-iPhone Tests";
+		};
+		7F853C7B293A76AF005F0390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F853C71293A76AF005F0390 /* Unity-iPhone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D25AB9D213FB47800354C27;
+			remoteInfo = UnityFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7F853C85293A7732005F0390 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7F853C84293A7732005F0390 /* UnityFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7F853C32293A7594005F0390 /* SI Museum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SI Museum.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F853C35293A7594005F0390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F853C37293A7594005F0390 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7F853C39293A7594005F0390 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F853C3C293A7594005F0390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F853C3E293A7595005F0390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F853C41293A7595005F0390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F853C43293A7595005F0390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F853C48293A7595005F0390 /* SIMuseum FPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SIMuseum FPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F853C4C293A7595005F0390 /* SIMuseum_FPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIMuseum_FPTests.swift; sourceTree = "<group>"; };
+		7F853C52293A7595005F0390 /* SIMuseum FPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SIMuseum FPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F853C56293A7595005F0390 /* SIMuseum_FPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIMuseum_FPUITests.swift; sourceTree = "<group>"; };
+		7F853C58293A7595005F0390 /* SIMuseum_FPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIMuseum_FPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7F853C71293A76AF005F0390 /* Unity-iPhone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Unity-iPhone.xcodeproj"; path = "../../UnityBuild/Unity-iPhone.xcodeproj"; sourceTree = "<group>"; };
+		7F853C88293A78AE005F0390 /* Unity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unity.swift; sourceTree = "<group>"; };
+		7F853C8A293A7989005F0390 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = "../../../FinalProject 2.0/SIMuseum/SIMuseum/Views/HeaderView.swift"; sourceTree = "<group>"; };
+		7F853C8B293A7989005F0390 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "../../../FinalProject 2.0/SIMuseum/SIMuseum/Views/ContentView.swift"; sourceTree = "<group>"; };
+		7F853C93293A94D6005F0390 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		7F853CA4293B2208005F0390 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		7F853CA5293B2208005F0390 /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
+		7F853CA6293B2208005F0390 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		7F853CEB293C71C3005F0390 /* Slideshow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slideshow.swift; sourceTree = "<group>"; };
+		7F853CED293C76F0005F0390 /* SlideshowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowData.swift; sourceTree = "<group>"; };
+		7F853CEF293C7777005F0390 /* SlideshowDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowDataService.swift; sourceTree = "<group>"; };
+		7F853CF3293D9803005F0390 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		7F853CF5293D9DBE005F0390 /* DonateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateView.swift; sourceTree = "<group>"; };
+		7F853CF7293DA5AD005F0390 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		7F853CF9293E870E005F0390 /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		7F853D40293ECE6E005F0390 /* TabFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabFooterView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F853C2F293A7594005F0390 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F853C83293A7732005F0390 /* UnityFramework.framework in Frameworks */,
+				7F853CA2293A9A37005F0390 /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F853C45293A7595005F0390 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F853C4F293A7595005F0390 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F853C29293A7594005F0390 = {
+			isa = PBXGroup;
+			children = (
+				7F853C91293A946C005F0390 /* Packages */,
+				7F853C34293A7594005F0390 /* SIMuseum FP */,
+				7F853C4B293A7595005F0390 /* SIMuseum FPTests */,
+				7F853C55293A7595005F0390 /* SIMuseum FPUITests */,
+				7F853C33293A7594005F0390 /* Products */,
+				7F853C82293A7732005F0390 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7F853C33293A7594005F0390 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F853C32293A7594005F0390 /* SI Museum.app */,
+				7F853C48293A7595005F0390 /* SIMuseum FPTests.xctest */,
+				7F853C52293A7595005F0390 /* SIMuseum FPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F853C34293A7594005F0390 /* SIMuseum FP */ = {
+			isa = PBXGroup;
+			children = (
+				7F853C39293A7594005F0390 /* ViewController.swift */,
+				7F853CF7293DA5AD005F0390 /* ViewRouter.swift */,
+				7F853C35293A7594005F0390 /* AppDelegate.swift */,
+				7F853CA6293B2208005F0390 /* Article.swift */,
+				7F853CA4293B2208005F0390 /* ArticleCell.swift */,
+				7F853CA5293B2208005F0390 /* ArticleListView.swift */,
+				7F853C8B293A7989005F0390 /* ContentView.swift */,
+				7F853C93293A94D6005F0390 /* DataService.swift */,
+				7F853CF5293D9DBE005F0390 /* DonateView.swift */,
+				7F853C8A293A7989005F0390 /* HeaderView.swift */,
+				7F853C40293A7595005F0390 /* LaunchScreen.storyboard */,
+				7F853C3B293A7594005F0390 /* Main.storyboard */,
+				7F853CF3293D9803005F0390 /* ShopView.swift */,
+				7F853C37293A7594005F0390 /* SceneDelegate.swift */,
+				7F853CEB293C71C3005F0390 /* Slideshow.swift */,
+				7F853CED293C76F0005F0390 /* SlideshowData.swift */,
+				7F853CEF293C7777005F0390 /* SlideshowDataService.swift */,
+				7F853D40293ECE6E005F0390 /* TabFooterView.swift */,
+				7F853CF9293E870E005F0390 /* TicketView.swift */,
+				7F853C88293A78AE005F0390 /* Unity.swift */,
+				7F853C3E293A7595005F0390 /* Assets.xcassets */,
+				7F853C43293A7595005F0390 /* Info.plist */,
+			);
+			path = "SIMuseum FP";
+			sourceTree = "<group>";
+		};
+		7F853C4B293A7595005F0390 /* SIMuseum FPTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F853C4C293A7595005F0390 /* SIMuseum_FPTests.swift */,
+			);
+			path = "SIMuseum FPTests";
+			sourceTree = "<group>";
+		};
+		7F853C55293A7595005F0390 /* SIMuseum FPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F853C56293A7595005F0390 /* SIMuseum_FPUITests.swift */,
+				7F853C58293A7595005F0390 /* SIMuseum_FPUITestsLaunchTests.swift */,
+				7F853C71293A76AF005F0390 /* Unity-iPhone.xcodeproj */,
+			);
+			path = "SIMuseum FPUITests";
+			sourceTree = "<group>";
+		};
+		7F853C72293A76AF005F0390 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F853C78293A76AF005F0390 /* Unity-Target-New.app */,
+				7F853C7A293A76AF005F0390 /* Unity-iPhone Tests.xctest */,
+				7F853C7C293A76AF005F0390 /* UnityFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F853C82293A7732005F0390 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F853C91293A946C005F0390 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F853C31293A7594005F0390 /* SIMuseum FP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F853C5C293A7595005F0390 /* Build configuration list for PBXNativeTarget "SIMuseum FP" */;
+			buildPhases = (
+				7F853C2E293A7594005F0390 /* Sources */,
+				7F853C2F293A7594005F0390 /* Frameworks */,
+				7F853C30293A7594005F0390 /* Resources */,
+				7F853C85293A7732005F0390 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SIMuseum FP";
+			packageProductDependencies = (
+				7F853CA1293A9A37005F0390 /* SwiftSoup */,
+			);
+			productName = "SIMuseum FP";
+			productReference = 7F853C32293A7594005F0390 /* SI Museum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F853C47293A7595005F0390 /* SIMuseum FPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F853C5F293A7595005F0390 /* Build configuration list for PBXNativeTarget "SIMuseum FPTests" */;
+			buildPhases = (
+				7F853C44293A7595005F0390 /* Sources */,
+				7F853C45293A7595005F0390 /* Frameworks */,
+				7F853C46293A7595005F0390 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F853C4A293A7595005F0390 /* PBXTargetDependency */,
+			);
+			name = "SIMuseum FPTests";
+			productName = "SIMuseum FPTests";
+			productReference = 7F853C48293A7595005F0390 /* SIMuseum FPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F853C51293A7595005F0390 /* SIMuseum FPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F853C62293A7595005F0390 /* Build configuration list for PBXNativeTarget "SIMuseum FPUITests" */;
+			buildPhases = (
+				7F853C4E293A7595005F0390 /* Sources */,
+				7F853C4F293A7595005F0390 /* Frameworks */,
+				7F853C50293A7595005F0390 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F853C54293A7595005F0390 /* PBXTargetDependency */,
+			);
+			name = "SIMuseum FPUITests";
+			productName = "SIMuseum FPUITests";
+			productReference = 7F853C52293A7595005F0390 /* SIMuseum FPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F853C2A293A7594005F0390 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					7F853C31293A7594005F0390 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					7F853C47293A7595005F0390 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 7F853C31293A7594005F0390;
+					};
+					7F853C51293A7595005F0390 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 7F853C31293A7594005F0390;
+					};
+				};
+			};
+			buildConfigurationList = 7F853C2D293A7594005F0390 /* Build configuration list for PBXProject "SIMuseum" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F853C29293A7594005F0390;
+			packageReferences = (
+				7F853CA0293A9A37005F0390 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
+			productRefGroup = 7F853C33293A7594005F0390 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7F853C72293A76AF005F0390 /* Products */;
+					ProjectRef = 7F853C71293A76AF005F0390 /* Unity-iPhone.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				7F853C31293A7594005F0390 /* SIMuseum FP */,
+				7F853C47293A7595005F0390 /* SIMuseum FPTests */,
+				7F853C51293A7595005F0390 /* SIMuseum FPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7F853C78293A76AF005F0390 /* Unity-Target-New.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			name = "Unity-Target-New.app";
+			path = unityapp.app;
+			remoteRef = 7F853C77293A76AF005F0390 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7F853C7A293A76AF005F0390 /* Unity-iPhone Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Unity-iPhone Tests.xctest";
+			remoteRef = 7F853C79293A76AF005F0390 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7F853C7C293A76AF005F0390 /* UnityFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UnityFramework.framework;
+			remoteRef = 7F853C7B293A76AF005F0390 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F853C30293A7594005F0390 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F853C42293A7595005F0390 /* LaunchScreen.storyboard in Resources */,
+				7F853C3F293A7595005F0390 /* Assets.xcassets in Resources */,
+				7F853C3D293A7594005F0390 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F853C46293A7595005F0390 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F853C50293A7595005F0390 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F853C2E293A7594005F0390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F853CEC293C71C3005F0390 /* Slideshow.swift in Sources */,
+				7F853C3A293A7594005F0390 /* ViewController.swift in Sources */,
+				7F853C8D293A7989005F0390 /* HeaderView.swift in Sources */,
+				7F853C8E293A7989005F0390 /* ContentView.swift in Sources */,
+				7F853C36293A7594005F0390 /* AppDelegate.swift in Sources */,
+				7F853CA8293B225E005F0390 /* Article.swift in Sources */,
+				7F853CFA293E870E005F0390 /* TicketView.swift in Sources */,
+				7F853C38293A7594005F0390 /* SceneDelegate.swift in Sources */,
+				7F853C89293A78AE005F0390 /* Unity.swift in Sources */,
+				7F853CF8293DA5AD005F0390 /* ViewRouter.swift in Sources */,
+				7F853CEE293C76F0005F0390 /* SlideshowData.swift in Sources */,
+				7F853CF6293D9DBE005F0390 /* DonateView.swift in Sources */,
+				7F853D41293ECE6E005F0390 /* TabFooterView.swift in Sources */,
+				7F853CF0293C7777005F0390 /* SlideshowDataService.swift in Sources */,
+				7F853CA7293B225E005F0390 /* ArticleListView.swift in Sources */,
+				7F853C94293A94D6005F0390 /* DataService.swift in Sources */,
+				7F853CF4293D9803005F0390 /* ShopView.swift in Sources */,
+				7F853CA9293B225E005F0390 /* ArticleCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F853C44293A7595005F0390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F853C4D293A7595005F0390 /* SIMuseum_FPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F853C4E293A7595005F0390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F853C59293A7595005F0390 /* SIMuseum_FPUITestsLaunchTests.swift in Sources */,
+				7F853C57293A7595005F0390 /* SIMuseum_FPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F853C4A293A7595005F0390 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F853C31293A7594005F0390 /* SIMuseum FP */;
+			targetProxy = 7F853C49293A7595005F0390 /* PBXContainerItemProxy */;
+		};
+		7F853C54293A7595005F0390 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F853C31293A7594005F0390 /* SIMuseum FP */;
+			targetProxy = 7F853C53293A7595005F0390 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F853C3B293A7594005F0390 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F853C3C293A7594005F0390 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F853C40293A7595005F0390 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F853C41293A7595005F0390 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F853C5A293A7595005F0390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F853C5B293A7595005F0390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F853C5D293A7595005F0390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9AT8VD6Q34;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SIMuseum FP/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RobNilsen.SIMuseum-FP";
+				PRODUCT_NAME = "SI Museum";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F853C5E293A7595005F0390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9AT8VD6Q34;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SIMuseum FP/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RobNilsen.SIMuseum-FP";
+				PRODUCT_NAME = "SI Museum";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7F853C60293A7595005F0390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9AT8VD6Q34;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RobNilsen.SIMuseum-FPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SIMuseum FP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SIMuseum FP";
+			};
+			name = Debug;
+		};
+		7F853C61293A7595005F0390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9AT8VD6Q34;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RobNilsen.SIMuseum-FPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SIMuseum FP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SIMuseum FP";
+			};
+			name = Release;
+		};
+		7F853C63293A7595005F0390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9AT8VD6Q34;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RobNilsen.SIMuseum-FPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SIMuseum FP";
+			};
+			name = Debug;
+		};
+		7F853C64293A7595005F0390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9AT8VD6Q34;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RobNilsen.SIMuseum-FPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SIMuseum FP";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F853C2D293A7594005F0390 /* Build configuration list for PBXProject "SIMuseum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F853C5A293A7595005F0390 /* Debug */,
+				7F853C5B293A7595005F0390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F853C5C293A7595005F0390 /* Build configuration list for PBXNativeTarget "SIMuseum FP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F853C5D293A7595005F0390 /* Debug */,
+				7F853C5E293A7595005F0390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F853C5F293A7595005F0390 /* Build configuration list for PBXNativeTarget "SIMuseum FPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F853C60293A7595005F0390 /* Debug */,
+				7F853C61293A7595005F0390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F853C62293A7595005F0390 /* Build configuration list for PBXNativeTarget "SIMuseum FPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F853C63293A7595005F0390 /* Debug */,
+				7F853C64293A7595005F0390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F853CA0293A9A37005F0390 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F853CA1293A9A37005F0390 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F853CA0293A9A37005F0390 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7F853C2A293A7594005F0390 /* Project object */;
+}
