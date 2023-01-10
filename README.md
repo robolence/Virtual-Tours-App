@@ -3,6 +3,10 @@
   title="Home feed image, VR image, iPad compatible home feed image"
   style="display: inline-block; margin: 0 auto; height: 500px">
 
+// Description //
+
+Project includes iOS app built with SwiftUI and integrated with native Unity scene(s). Some features are not yet available such as the hamburger menu and search options- hoping to get these out within the next few months.
+
 // Associated Video //
 
 Youtube video: https://www.youtube.com/watch?v=UETfWizbgHU 
