@@ -5,7 +5,7 @@
 
 // Description //
 
-Project includes iOS app built with SwiftUI and integrated with native Unity scene(s). Some features are not yet available such as the hamburger menu and search options- hoping to get these out within the next few months.
+Project includes iOS app built with SwiftUI and integrated with native Unity scene(s), compatible with light / dark mode. Some features are not yet available, i.e. the hamburger menu and search options- hoping to get these out within the next few months. 
 
 // Associated Video //
 
