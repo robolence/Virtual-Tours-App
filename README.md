@@ -1,3 +1,9 @@
+<img
+  src="/img/readmeImage.jpg"
+  alt="Alt text"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; height: 300px">
+
 // Associated Video //
 
 Youtube video: https://www.youtube.com/watch?v=UETfWizbgHU 
