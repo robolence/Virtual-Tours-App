@@ -2,7 +2,7 @@
   src="/img/readmeOne.jpg"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 25px">
+  style="display: inline-block; margin: 0 auto; max-height: 25px">
 
 // Associated Video //
 
