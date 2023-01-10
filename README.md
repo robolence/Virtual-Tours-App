@@ -1,17 +1,5 @@
 <img
-  src="/img/readmeOne.jpg"
-  alt="Alt text"
-  title="Optional title"
-  style="display: inline-block; margin: 0 auto; height: 300px">
-  
-  <img
-  src="/img/readmeTwo.jpg"
-  alt="Alt text"
-  title="Optional title"
-  style="display: inline-block; margin: 0 auto; height: 300px">
-  
-  <img
-  src="/img/readmeThree.jpg"
+  src="/img/readmeImage.jpg"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto; height: 300px">
