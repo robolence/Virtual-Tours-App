@@ -1,7 +1,6 @@
 <img
   src="/img/readmeImage.jpg"
-  alt="Alt text"
-  title="Optional title"
+  title="Home feed image, VR image, iPad compatible home feed image"
   style="display: inline-block; margin: 0 auto; height: 500px">
 
 // Associated Video //
