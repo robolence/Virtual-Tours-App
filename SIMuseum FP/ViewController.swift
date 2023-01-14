@@ -10,6 +10,7 @@ import SwiftUI
 
 class ViewController: UIViewController {
     @StateObject var viewRouter = ViewRouter()
+    @ObservedObject var data = DataService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,8 @@ class ViewController: UIViewController {
         vc.view.frame = self.view.frame
         view.addSubview(vc.view)
         vc.didMove(toParent: self)
+        
+        data.fetchData()
     }
 }
 
