@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:UnityBuild/Unity-iPhone.xcodeproj">
+      location = "developer:../../../../Users/rnilsen/Documents/MuseumApp/UnityBuild/Unity-iPhone.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:/Users/rnilsen/Documents/Harvard/Fall 2022/COMP SCI 50/Final Project 3/SIMuseum FP/SIMuseum.xcodeproj">

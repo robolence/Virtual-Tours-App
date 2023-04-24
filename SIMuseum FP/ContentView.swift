@@ -9,45 +9,65 @@ import SwiftUI
 
 struct ContentView: View {
     
+    // Light/dark mode variable
     @Environment(\.colorScheme) var colorScheme
-    @StateObject var viewRouter: ViewRouter
+    
+    // Tab toggle variable
+    @StateObject var viewRouter = ViewRouter()
+    
+    // Object holding updated articles from museum website
+    @StateObject var data = DataService()
+    
+    // Sidebar toggle variable
+    @Binding var showSidebar: Bool
     
     var body: some View {
-                // Brings different tab views to be opened on command from main view
-        GeometryReader { geometry in
-            ZStack {
-                // Controls tab views
-                switch viewRouter.currentPage {
-                case .home:
-                    ArticleListView()
-                case .shop:
-                    ShopView()
-                case .ticket:
-                    TicketView()
-                case .donate:
-                    DonateView()
+        // Brings different tab views to be opened on command from main view
+        SideBarStack(sidebarWidth: 125, showSidebar: $showSidebar) {
+            // Sidebar content here
+            Text("hi")
+        } content: {
+            GeometryReader { geometry in
+                ZStack {
+                    // Controls tab views
+                    switch viewRouter.currentPage {
+                    case .home:
+                        ArticleListView(data: data)
+                            .onAppear(perform: fetchData)
+                    case .shop:
+                        ShopView()
+                    case .ticket:
+                        TicketView()
+                    case .donate:
+                        DonateView()
+                    }
+                    
+                    VStack {
+                        Header(showSidebar: $showSidebar)
+                            .frame(width: geometry.size.width, height: geometry.size.height/5)
+                        Spacer()
+                        Footer(viewRouter: viewRouter)
+                            .frame(height: geometry.size.height/9)
+                    }
+                    .edgesIgnoringSafeArea(.all)
                 }
-                
-                VStack {
-                    Header()
-                        .frame(width: geometry.size.width, height: geometry.size.height/5)
-                    Spacer()
-                    Footer(viewRouter: viewRouter)
-                        .frame(height: geometry.size.height/9)
-                }
-                .edgesIgnoringSafeArea(.all)
             }
         }
+    }
+    
+    func fetchData(){
+        data.fetchData()
     }
 }
 
 struct Header: View {
     @Environment(\.colorScheme) var colorScheme
+    @Binding var showSidebar: Bool
     
     var body: some View {
             HStack {
                 Button(action: {
-                    print("Menu")
+                    self.showSidebar.toggle()
                 }) {
                     Image(systemName: "line.horizontal.3")
                 }
@@ -152,7 +172,7 @@ struct Footer: View {
 struct ArticleListView: View {
     
     @Environment(\.colorScheme) var colorScheme
-    @ObservedObject var data = DataService()
+    @StateObject var data: DataService
     
     var body: some View {
         GeometryReader { geometry in
@@ -165,19 +185,12 @@ struct ArticleListView: View {
                 }
                 .padding(.top, 72)
                 .disableAutocorrection(true)
-                .onAppear(perform: fetchData)
                 .listStyle(GroupedListStyle())
                 .frame(maxWidth: .infinity, alignment: .center)
                 .frame(width: geometry.size.width)
                 .background(colorScheme == .dark ? Color(UIColor.systemGray6) : Color.white)
-                .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
-                    fetchData()
-                }
             }
         }
-    }
-    func fetchData(){
-        data.fetchData()
     }
 }
 
@@ -193,11 +206,10 @@ struct ArticleCell: View {
                 // Article Image
                 AsyncImage(url: URL(string: "\(article.imageURL)")) { image in image
                         .resizable()
-                        .frame(width: .infinity)
                         .scaledToFill()
                     
                 } placeholder: {
-                    Color.gray
+                    ProgressView()
                 }
                 .onTapGesture {
                     if let url = article.url{
@@ -278,4 +290,5 @@ struct TicketView: View {
         Text("Tickets")
     }
 }
+
 
